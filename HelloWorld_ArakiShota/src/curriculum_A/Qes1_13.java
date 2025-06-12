@@ -136,5 +136,6 @@ public class Qes1_13 {
 		BOOL = bool || bool2;
 		
 		System.out.println(BOOL);
+		
 	}
 }
