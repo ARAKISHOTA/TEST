@@ -65,7 +65,76 @@ public class Qes1_13 {
 		System.out.println("好きな食べ物は" + food + "です。");
 		
 		//BMI出力
-		height = height / s;
-		System.out.println("BMIは" + weight / (height * height) + "です。");
+		float height_m = height / s;
+		System.out.println("BMIは" + weight / (height_m * height_m) + "です。");
+	
+		
+		
+		//再代入しコンソールに出力
+		name = "鈴木一郎";
+		age = 24;
+		height = 168.5f;
+		weight = 64.2f;
+		food = "オムライス";
+		height_m = height / s;
+		
+		System.out.println("初めまして" + name + "です。");
+		System.out.println("年齢は" + age + "歳です。");
+		System.out.println("身長は" + height + "cmです。");
+		System.out.println("体重は" + weight + "kgです。");
+		System.out.println("好きな食べ物は" + food + "です。");
+		System.out.println("BMIは" + weight / (height_m * height_m) + "です。");
+		
+		//和算で自己代入しコンソールに出力
+		age += age;
+		height += height;
+		weight += weight;
+		height_m = height / s;
+		
+		System.out.println("初めまして" + name + "です。");
+		System.out.println("年齢は" + age + "歳です。");
+		System.out.println("身長は" + height + "cmです。");
+		System.out.println("体重は" + weight + "kgです。");
+		System.out.println("好きな食べ物は" + food + "です。");
+		System.out.println("BMIは" + weight / (height_m * height_m) + "です。");
+		
+		
+		
+		//25歳以上ならtrueが出力
+		age = 24;
+		
+		bool = (age >= 25);
+		System.out.println(bool);
+		
+		//文字列型に型変換し繋げて出力
+		height = 168.5f;
+		weight = 64.2f;
+		String Age,Height,Weight;
+		
+		Age = String.valueOf(age);
+		Height = String.valueOf(height);
+		Weight = String.valueOf(weight);
+		
+		System.out.println(Age + Height + Weight);
+		
+		//整数型に変換して出力
+		int AGE,HEIGHT;
+		
+		AGE = Integer.valueOf(Age);
+		height = Float.valueOf(Height);
+		HEIGHT = (int)height;
+		
+		System.out.println(AGE);
+		System.out.println(HEIGHT);
+		
+		
+		
+		//【年齢が25もしくは身長が160以上】であればtrueを出力
+		boolean bool2,BOOL;
+		bool = AGE >= 25;
+		bool2 = HEIGHT >= 160;
+		BOOL = bool || bool2;
+		
+		System.out.println(BOOL);
 	}
 }
