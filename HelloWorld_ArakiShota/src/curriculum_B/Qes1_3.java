@@ -11,13 +11,12 @@ public class Qes1_3 {
 		//ログイン時の入力チェックシステムを作成してください
 		Pattern p = Pattern.compile("^[0-9a-zA-Z]+$");//半角英数確認用
 		Pattern s = Pattern.compile("^[0-9]+$");//数字確認用
-		String name;
+		String name;//ユーザー名登録用
 		
 		for(int i = 0;i <= 0;)/* ユーザー名登録までループ */ {
 			System.out.println("キーボードから名前を入力してください");
 			Scanner scan = new Scanner(System.in);
 			name = scan.nextLine();
-			
 			
 			if(name.length() <= 0 || name == null) {
 				System.out.println("名前を入力してください");
@@ -38,7 +37,7 @@ public class Qes1_3 {
 			System.out.println("手を決めてください");
 			Scanner scan = new Scanner(System.in);
 			String str2 = scan.next();
-			if(s.matcher(str2).find() == false) {
+			if(s.matcher(str2).find() == false) /* 入力された文字が数字か確認 */{
 				c--;
 			}
 			else if(Integer.parseInt(str2) == 0 || Integer.parseInt(str2) == 1 || Integer.parseInt(str2) == 2) {
@@ -69,7 +68,8 @@ public class Qes1_3 {
 				else if(enemy  == 2) {
 					System.out.println("相手の手は「パー」");
 				}
-			
+				
+				//結果表示
 				if(self == 1 && enemy == 0) {
 					System.out.println("俺の勝ち！");
 					System.out.println("負けは次につながるチャンスです！");
@@ -95,7 +95,7 @@ public class Qes1_3 {
 					i++;
 				}
 			}
-			else {
+			else /* 数字でも０，１，２以外の場合 */{
 				c--;
 			}
 		}
