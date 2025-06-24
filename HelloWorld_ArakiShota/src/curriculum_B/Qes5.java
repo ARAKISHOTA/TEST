@@ -6,29 +6,11 @@ public class Qes5 {
 		// TODO 自動生成されたメソッド・スタブ
 
 		//for文を使用して20×9表を出力してください
-		for(int i = 1,j = 1;i <= 9;i++) {
-			System.out.println(String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j++) + " || " +
-					String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j++) + " || " +
-					String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j++) + " || " +
-					String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j++) + " || " +
-					String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j++) + " || " +
-					String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j++) + " || " +
-					String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j++) + " || " +
-					String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j++) + " || " +
-					String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j++) + " || " +
-					String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j++) + " || " +
-					String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j++) + " || " +
-					String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j++) + " || " +
-					String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j++) + " || " +
-					String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j++) + " || " +
-					String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j++) + " || " +
-					String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j++) + " || " +
-					String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j++) + " || " +
-					String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j++) + " || " +
-					String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j++) + " || " +
-					String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j)
-					);
-			j = 1;
+		for(int i = 1;i <= 9;i++) {
+			for(int j = 1;j <= 9;j++) {
+				System.out.print(String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j) + " || ");
+			}
+			System.out.println();
 		}
 	}
 
