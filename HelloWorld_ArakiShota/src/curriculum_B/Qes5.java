@@ -7,7 +7,7 @@ public class Qes5 {
 
 		//for文を使用して20×9表を出力してください
 		for(int i = 1;i <= 9;i++) {
-			for(int j = 1;j <= 9;j++) {
+			for(int j = 1;j <= 20;j++) {
 				System.out.print(String.format("%03d", j) + " * " + String.format("%03d", i) + " = " + String.format("%03d", i * j) + " || ");
 			}
 			System.out.println();

@@ -3,8 +3,8 @@ import java.util.Random;
 
 public class Curriculum_New_1_18 {
 	// Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください。
-	private static void method1() {
-		System.out.println("Hello JavaSE 11");
+	public static void method1(String s,int x) {
+		System.out.println(s + " " + x);
 	}
 	
 	// Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力するメソッドを作成してください
@@ -64,7 +64,9 @@ public class Curriculum_New_1_18 {
 	
 	public static void main(String[] args) {
 		// 作成したメソッドをここで呼び出してください
-		method1();
+		String s = "Hello JavaSE";
+		int x = 11;
+		method1(s,x);
 		method2(2);
 		int a[] = {7,3,6,9,1};
 		method3(a);
