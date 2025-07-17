@@ -2,11 +2,11 @@ package example;
 
 public class exampleA{
 	
-	String formattedDateTime;
+	private String formattedDateTime;
 	
 	public exampleA(String st) {
 		// TODO 自動生成されたコンストラクター・スタブ
-		this.formattedDateTime = st;
+		this.setFormattedDateTime(st);
 	}
 	
 	public void print(String formattedDateTime) {
@@ -14,5 +14,13 @@ public class exampleA{
 		System.out.println("この寿司はうまい");
 		System.out.println("寿司は和食です");
 		System.out.println("今の現在日時は" + formattedDateTime + "です");
+	}
+
+	public String getFormattedDateTime() {
+		return formattedDateTime;
+	}
+
+	public void setFormattedDateTime(String formattedDateTime) {
+		this.formattedDateTime = formattedDateTime;
 	}
 }

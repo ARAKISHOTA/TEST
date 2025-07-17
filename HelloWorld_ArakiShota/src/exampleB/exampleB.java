@@ -12,8 +12,8 @@ public class exampleB {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd H:m:s");
 		String st = ldt.format(formatter);
 		exampleA example = new exampleA(st);
+		example.setFormattedDateTime(st);
 		
-		example.print(st);
+		example.print(example.getFormattedDateTime());
 	}
-
 }
