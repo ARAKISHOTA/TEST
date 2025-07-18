@@ -6,8 +6,6 @@ public class EncapsulationB {
 		float weight = 2.1F;
 		int speed = 80;
 		
-		//encapsulationA encapsulation = new encapsulationA(name,weight,speed);
-		
 		EncapsulationA encapsulation = new EncapsulationA();
 		
 		encapsulation.setName(name);
