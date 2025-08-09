@@ -16,7 +16,6 @@ public class Object_oriented_B {
 		Prefectures_A prefectures_A = new Prefectures_A(string);
 		
 		System.out.println("昇順か降順を入力してください");
-		scan = new Scanner(System.in);
 		string = scan.nextLine();
 		scan.close();
 		
