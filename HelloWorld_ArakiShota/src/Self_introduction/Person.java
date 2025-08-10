@@ -2,12 +2,12 @@ package Self_introduction;
 
 class Person{
 	 // インスタンスフィールドを定義
-	String name;
-	int age;
-	double height;
-	double weight;
-	double bmi;
-	int number_of_people = 0;
+	private String name;
+	private int age;
+	private double height;
+	private double weight;
+	private double bmi;
+	static int count = 0;
 	
 	 // コンストラクタを定義しインスタンスフィールドに値をセット
 	 Person(String name,int age,double height,double weight){
@@ -15,7 +15,7 @@ class Person{
 		 this.age = age;
 		 this.height = height;
 		 this.weight = weight;
-		 this.number_of_people++;
+		 count++;
 	 }
 	 
 	 public double BMI() {
@@ -26,7 +26,10 @@ class Person{
 	 public void print() {
 		 System.out.println("名前は" + this.name + "です");
 		 System.out.println("年は" + this.age + "です");
-		 System.out.println("BMIは" + String.format("%.1f", this.bmi) + "です");
-		 System.out.println("\n合計" + this.number_of_people + "人です");
+		 System.out.println("BMIは" + String.format("%.1f", this.BMI()) + "です"); 
 	 }
-	}
+	 
+	 public void printCount() {
+		 System.out.println("\n合計" + this.count + "人です");
+	 }
+}
