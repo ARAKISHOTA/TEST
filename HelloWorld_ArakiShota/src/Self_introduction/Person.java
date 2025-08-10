@@ -30,6 +30,6 @@ class Person{
 	 }
 	 
 	 public void printCount() {
-		 System.out.println("\n合計" + this.count + "人です");
+		 System.out.println("\n合計" + count + "人です");
 	 }
 }
