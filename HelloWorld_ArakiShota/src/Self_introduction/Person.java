@@ -34,4 +34,5 @@ class Person{
 	 public static void printCount() {
 		 System.out.println("\n合計" + Person.count + "人です");
 	 }
+	 
 }
