@@ -1,4 +1,4 @@
-package Self_introduction;
+package Self_introduction3;
 
 class Main {
 	  public static void main(String[] args) {

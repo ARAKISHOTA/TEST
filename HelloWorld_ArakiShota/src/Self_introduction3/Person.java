@@ -1,4 +1,4 @@
-package Self_introduction;
+package Self_introduction3;
 
 class Person{
 	 // インスタンスフィールドを定義
